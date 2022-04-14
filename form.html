@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
+  <style>
+  .mydiv{
+    background-color:palegreen;
+    width:400px;
+    height: 500px;
+    margin-left:550px;
+  }
+</style>
+</head>
+<body bgcolor="pink">
+  <div class="mydiv">
+  <form id="myForm" action="/action_page.php">
+   <fieldset>
+    <legend>RAGESTRATION:</legend>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br><br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday"><br><br><br>
+    <label for="Mobile No">Mobile No:</label>
+<input type="Mobile No" id="Mobile No" name="Mobile No"><br><br><br>
+<label for="Hobbies">Hobbies:</label>
+<input type="checkbox" name="hobby" value="sports" id="sport">
+            <label for="sport">Sports</label>
+            <input type="checkbox" name="hobby" value="music" id="music">
+            <label for="music">Music</label>
+            <input type="checkbox" name="hobby" value="reading" id="read">
+            <label for="read">Reading</label><br><br>
+        
+
+    <label for="gender"> Select your gender:</label>
+<select name="gender">
+<option value="none" selected>Gender</option>
+<option value="male">Male</option>
+<option value="female">Female</option>
+<option value="other">other</option>
+<br><br>
+<input type="file" id="myFile" name="filename"><br><br><br>
+
+
+<center><button type="submit" onclick="myFunction()" value="Submit">Submit</button>
+  <input type="reset" value="Reset"></center>
+    secret:<input type="hidden" name="secret">
+   </fieldset>
+  </form>
+</div>
+
+<script>
+  function myFunction() {
+    
+     document.getElementById("myForm").submit();
+  }
+  </script>
+  
+</body>
+</html>
